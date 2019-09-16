@@ -18,7 +18,7 @@ export class PhotoService {
 		};
 		this.camera.getPicture(options).then((imageData) => {
 			this.photos.unshift({
-				data : 'data: image/jpeg;base64,' + imageData
+				data : 'data:image/jpeg;base64,' + imageData
 		}); }, (err) => {
 			//Handle error
 			console.log("Camera issue:" + err);
